@@ -38,11 +38,20 @@ int main()
 
 int accept_money()
 {
-  //write your code
+  int coins=0;
+  int coin;
+  while(coins<TWINKIE_PRICE){
+  cout << "please insert a coin." << endl;
+  cin >> coin;
+  //cout<<coins<<endl;
+  coins+=coin;
+  }
+  return coins;
 }
 
 int compute_change(int total_paid) 
 {
-//write your code
+return (total_paid-TWINKIE_PRICE);
 }
+
 
